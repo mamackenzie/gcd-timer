@@ -105,9 +105,11 @@
 
 - (void)invalidate
 {
-    if (_isValid) {
-        _isValid = NO;
-        dispatch_source_cancel(_timer);
+    @synchronized (self) {
+        if (_isValid) {
+            _isValid = NO;
+            dispatch_source_cancel(_timer);
+        }
     }
 }
 
@@ -120,38 +122,40 @@
 
 - (void)scheduleBlock:(void (^)(void))block afterInterval:(NSTimeInterval)interval repeat:(BOOL)repeat
 {
-    if (_isValid) {
-        @throw [NSException exceptionWithName:GCDTimerException
-                                       reason:@"Attempt to schedule block while timer is valid."
-                                     userInfo:@{ GCDTimerNameKey : _name }];
-    }
-    
-    dispatch_time_t startTime;
-    dispatch_time_t intervalInNanoseconds = (dispatch_time_t)(NSEC_PER_SEC * interval);
-    if (_leeway >= TIMER_LEEWAY_HIGH) {
-        /*
-         * Prevent time-drift for long-running and/or imprecise timers.
-         */
-        startTime = dispatch_walltime(NULL, intervalInNanoseconds);
-    }
-    else {
-        startTime = dispatch_time(DISPATCH_TIME_NOW, intervalInNanoseconds);
-    }
-    
-    dispatch_source_set_timer(_timer, startTime, intervalInNanoseconds, _leeway);
-    
-    void (^eventHandler)(void) = ^{
-        if (!repeat) {
-            [self invalidate];
+    @synchronized (self) {
+        if (_isValid) {
+            @throw [NSException exceptionWithName:GCDTimerException
+                                           reason:@"Attempt to schedule block while timer is valid."
+                                         userInfo:@{ GCDTimerNameKey : _name }];
         }
-        block();
-    };
-    
-    dispatch_source_set_event_handler(_timer, eventHandler);
-    
-    _isValid = YES;
-    
-    dispatch_resume(_timer);
+        
+        dispatch_time_t startTime;
+        dispatch_time_t intervalInNanoseconds = (dispatch_time_t)(NSEC_PER_SEC * interval);
+        if (_leeway >= TIMER_LEEWAY_HIGH) {
+            /*
+             * Prevent time-drift for long-running and/or imprecise timers.
+             */
+            startTime = dispatch_walltime(NULL, intervalInNanoseconds);
+        }
+        else {
+            startTime = dispatch_time(DISPATCH_TIME_NOW, intervalInNanoseconds);
+        }
+        
+        dispatch_source_set_timer(_timer, startTime, intervalInNanoseconds, _leeway);
+        
+        void (^eventHandler)(void) = ^{
+            if (!repeat) {
+                [self invalidate];
+            }
+            block();
+        };
+        
+        dispatch_source_set_event_handler(_timer, eventHandler);
+        
+        _isValid = YES;
+        
+        dispatch_resume(_timer);
+    }
 }
 
 @end
