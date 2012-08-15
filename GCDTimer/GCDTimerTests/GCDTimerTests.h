@@ -19,7 +19,10 @@
 - (void)testTimerDoesntFireTooSoon;
 - (void)testTimerRepeats;
 - (void)testTimerInvalidates;
-- (void)testOneShotTimer;
-- (void)testRepeatedTimer;
+- (void)testTimerFiresOnDifferentQueue;
+- (void)testTimerDoesntFireTooSoonOnDifferentQueue;
+- (void)testTimerRepeatsOnDifferentQueue;
+- (void)testTimerInvalidatesOnDifferentQueue;
+- (void)testTimerWithHighLeeway;
 
 @end

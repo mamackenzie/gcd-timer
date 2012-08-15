@@ -27,6 +27,11 @@ static const uint64_t TIMER_LEEWAY_MEDIUM      = 100 * 1000 * 1000;
 static const uint64_t TIMER_LEEWAY_HIGH        = 1000 * 1000 * 1000;
 static const uint64_t TIMER_LEEWAY_VERY_HIGH   = 30 * 1000 * 1000 * 1000;
 
+/**
+ * @class GCDTimer
+ * @brief An efficient, thread-safe GCD-based timer implementation. GCDTimer allows for customization
+ * of the dispatch queue that is fired back on, as well as the required precision of the timer.
+ */
 @interface GCDTimer : NSObject
 {
     dispatch_source_t _timer;
