@@ -1,0 +1,7 @@
+//
+// Prefix header for all source files of the 'GCDTimer' target in the 'GCDTimer' project
+//
+
+#ifdef __OBJC__
+    #import <Foundation/Foundation.h>
+#endif

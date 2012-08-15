@@ -1,0 +1,409 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E79B4B8F15CF86B000E1EF28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79B4B8E15CF86B000E1EF28 /* Foundation.framework */; };
+		E79B4B9415CF86B000E1EF28 /* GCDTimer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = E79B4B9315CF86B000E1EF28 /* GCDTimer.h */; };
+		E79B4B9615CF86B000E1EF28 /* GCDTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B4B9515CF86B000E1EF28 /* GCDTimer.m */; };
+		E79B4B9E15CF86B000E1EF28 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79B4B9D15CF86B000E1EF28 /* SenTestingKit.framework */; };
+		E79B4BA015CF86B000E1EF28 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79B4B9F15CF86B000E1EF28 /* UIKit.framework */; };
+		E79B4BA115CF86B000E1EF28 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E79B4B8E15CF86B000E1EF28 /* Foundation.framework */; };
+		E79B4BA415CF86B000E1EF28 /* libGCDTimer.a in Frameworks */ = {isa = PBXBuildFile; fileRef = E79B4B8B15CF86B000E1EF28 /* libGCDTimer.a */; };
+		E79B4BAA15CF86B000E1EF28 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = E79B4BA815CF86B000E1EF28 /* InfoPlist.strings */; };
+		E79B4BAD15CF86B000E1EF28 /* GCDTimerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E79B4BAC15CF86B000E1EF28 /* GCDTimerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E79B4BA215CF86B000E1EF28 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E79B4B8215CF86B000E1EF28 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E79B4B8A15CF86B000E1EF28;
+			remoteInfo = GCDTimer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E79B4B8915CF86B000E1EF28 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				E79B4B9415CF86B000E1EF28 /* GCDTimer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E79B4B8B15CF86B000E1EF28 /* libGCDTimer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libGCDTimer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79B4B8E15CF86B000E1EF28 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		E79B4B9215CF86B000E1EF28 /* GCDTimer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GCDTimer-Prefix.pch"; sourceTree = "<group>"; };
+		E79B4B9315CF86B000E1EF28 /* GCDTimer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimer.h; sourceTree = "<group>"; };
+		E79B4B9515CF86B000E1EF28 /* GCDTimer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimer.m; sourceTree = "<group>"; };
+		E79B4B9C15CF86B000E1EF28 /* GCDTimerTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GCDTimerTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E79B4B9D15CF86B000E1EF28 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		E79B4B9F15CF86B000E1EF28 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		E79B4BA715CF86B000E1EF28 /* GCDTimerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GCDTimerTests-Info.plist"; sourceTree = "<group>"; };
+		E79B4BA915CF86B000E1EF28 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		E79B4BAB15CF86B000E1EF28 /* GCDTimerTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GCDTimerTests.h; sourceTree = "<group>"; };
+		E79B4BAC15CF86B000E1EF28 /* GCDTimerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GCDTimerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E79B4B8815CF86B000E1EF28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79B4B8F15CF86B000E1EF28 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E79B4B9815CF86B000E1EF28 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79B4B9E15CF86B000E1EF28 /* SenTestingKit.framework in Frameworks */,
+				E79B4BA015CF86B000E1EF28 /* UIKit.framework in Frameworks */,
+				E79B4BA115CF86B000E1EF28 /* Foundation.framework in Frameworks */,
+				E79B4BA415CF86B000E1EF28 /* libGCDTimer.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E79B4B8015CF86B000E1EF28 = {
+			isa = PBXGroup;
+			children = (
+				E79B4B9015CF86B000E1EF28 /* GCDTimer */,
+				E79B4BA515CF86B000E1EF28 /* GCDTimerTests */,
+				E79B4B8D15CF86B000E1EF28 /* Frameworks */,
+				E79B4B8C15CF86B000E1EF28 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E79B4B8C15CF86B000E1EF28 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E79B4B8B15CF86B000E1EF28 /* libGCDTimer.a */,
+				E79B4B9C15CF86B000E1EF28 /* GCDTimerTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E79B4B8D15CF86B000E1EF28 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E79B4B8E15CF86B000E1EF28 /* Foundation.framework */,
+				E79B4B9D15CF86B000E1EF28 /* SenTestingKit.framework */,
+				E79B4B9F15CF86B000E1EF28 /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E79B4B9015CF86B000E1EF28 /* GCDTimer */ = {
+			isa = PBXGroup;
+			children = (
+				E79B4B9315CF86B000E1EF28 /* GCDTimer.h */,
+				E79B4B9515CF86B000E1EF28 /* GCDTimer.m */,
+				E79B4B9115CF86B000E1EF28 /* Supporting Files */,
+			);
+			path = GCDTimer;
+			sourceTree = "<group>";
+		};
+		E79B4B9115CF86B000E1EF28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E79B4B9215CF86B000E1EF28 /* GCDTimer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E79B4BA515CF86B000E1EF28 /* GCDTimerTests */ = {
+			isa = PBXGroup;
+			children = (
+				E79B4BAB15CF86B000E1EF28 /* GCDTimerTests.h */,
+				E79B4BAC15CF86B000E1EF28 /* GCDTimerTests.m */,
+				E79B4BA615CF86B000E1EF28 /* Supporting Files */,
+			);
+			path = GCDTimerTests;
+			sourceTree = "<group>";
+		};
+		E79B4BA615CF86B000E1EF28 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E79B4BA715CF86B000E1EF28 /* GCDTimerTests-Info.plist */,
+				E79B4BA815CF86B000E1EF28 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E79B4B8A15CF86B000E1EF28 /* GCDTimer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E79B4BB015CF86B000E1EF28 /* Build configuration list for PBXNativeTarget "GCDTimer" */;
+			buildPhases = (
+				E79B4B8715CF86B000E1EF28 /* Sources */,
+				E79B4B8815CF86B000E1EF28 /* Frameworks */,
+				E79B4B8915CF86B000E1EF28 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GCDTimer;
+			productName = GCDTimer;
+			productReference = E79B4B8B15CF86B000E1EF28 /* libGCDTimer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+		E79B4B9B15CF86B000E1EF28 /* GCDTimerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E79B4BB315CF86B000E1EF28 /* Build configuration list for PBXNativeTarget "GCDTimerTests" */;
+			buildPhases = (
+				E79B4B9715CF86B000E1EF28 /* Sources */,
+				E79B4B9815CF86B000E1EF28 /* Frameworks */,
+				E79B4B9915CF86B000E1EF28 /* Resources */,
+				E79B4B9A15CF86B000E1EF28 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E79B4BA315CF86B000E1EF28 /* PBXTargetDependency */,
+			);
+			name = GCDTimerTests;
+			productName = GCDTimerTests;
+			productReference = E79B4B9C15CF86B000E1EF28 /* GCDTimerTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E79B4B8215CF86B000E1EF28 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0440;
+				ORGANIZATIONNAME = "Michael Mackenzie";
+			};
+			buildConfigurationList = E79B4B8515CF86B000E1EF28 /* Build configuration list for PBXProject "GCDTimer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = E79B4B8015CF86B000E1EF28;
+			productRefGroup = E79B4B8C15CF86B000E1EF28 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E79B4B8A15CF86B000E1EF28 /* GCDTimer */,
+				E79B4B9B15CF86B000E1EF28 /* GCDTimerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E79B4B9915CF86B000E1EF28 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79B4BAA15CF86B000E1EF28 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E79B4B9A15CF86B000E1EF28 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E79B4B8715CF86B000E1EF28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79B4B9615CF86B000E1EF28 /* GCDTimer.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E79B4B9715CF86B000E1EF28 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E79B4BAD15CF86B000E1EF28 /* GCDTimerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E79B4BA315CF86B000E1EF28 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E79B4B8A15CF86B000E1EF28 /* GCDTimer */;
+			targetProxy = E79B4BA215CF86B000E1EF28 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E79B4BA815CF86B000E1EF28 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E79B4BA915CF86B000E1EF28 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E79B4BAE15CF86B000E1EF28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		E79B4BAF15CF86B000E1EF28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 5.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E79B4BB115CF86B000E1EF28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GCDTimer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GCDTimer/GCDTimer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		E79B4BB215CF86B000E1EF28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/GCDTimer.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GCDTimer/GCDTimer-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		E79B4BB415CF86B000E1EF28 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GCDTimer/GCDTimer-Prefix.pch";
+				INFOPLIST_FILE = "GCDTimerTests/GCDTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		E79B4BB515CF86B000E1EF28 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "GCDTimer/GCDTimer-Prefix.pch";
+				INFOPLIST_FILE = "GCDTimerTests/GCDTimerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E79B4B8515CF86B000E1EF28 /* Build configuration list for PBXProject "GCDTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79B4BAE15CF86B000E1EF28 /* Debug */,
+				E79B4BAF15CF86B000E1EF28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E79B4BB015CF86B000E1EF28 /* Build configuration list for PBXNativeTarget "GCDTimer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79B4BB115CF86B000E1EF28 /* Debug */,
+				E79B4BB215CF86B000E1EF28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		E79B4BB315CF86B000E1EF28 /* Build configuration list for PBXNativeTarget "GCDTimerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E79B4BB415CF86B000E1EF28 /* Debug */,
+				E79B4BB515CF86B000E1EF28 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E79B4B8215CF86B000E1EF28 /* Project object */;
+}
